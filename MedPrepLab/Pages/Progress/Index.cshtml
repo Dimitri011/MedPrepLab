@@ -1,0 +1,57 @@
+﻿@page
+@model MedPrepLab.Pages.Progress.IndexModel
+@{
+    ViewData["Title"] = "Progres";
+}
+
+<h1>Dashboard de progres</h1>
+<p>Aici vezi evolutia ta in pregatirea pentru admitere.</p>
+
+<div class="grid">
+    <div class="card">
+        <h3>Teste completate</h3>
+        <p style="font-size: 32px; font-weight: 800;">@Model.Progress.TestsCompleted</p>
+    </div>
+
+    <div class="card">
+        <h3>Media scorurilor</h3>
+        <p style="font-size: 32px; font-weight: 800;">@Model.Progress.AverageScore%</p>
+    </div>
+
+    <div class="card">
+        <h3>Cel mai bun capitol</h3>
+        <p>@Model.Progress.BestChapter</p>
+    </div>
+</div>
+
+<div class="card" style="margin-top: 24px;">
+    <h3>MedRadar - capitol recomandat pentru repetare</h3>
+    <p>@Model.Progress.WeakestChapter</p>
+</div>
+
+<h2>Istoric teste</h2>
+
+@if (!Model.Progress.Results.Any())
+{
+    <div class="card">
+        <p>Nu ai facut inca niciun test.</p>
+        <a class="button" asp-page="/Quiz/Setup">Incepe primul test</a>
+    </div>
+}
+else
+{
+    @foreach (var result in Model.Progress.Results.OrderByDescending(r => r.Date))
+    {
+        <div class="card" style="margin-bottom: 16px;">
+            <h3>@result.Chapter</h3>
+            <p><strong>Data:</strong> @result.Date.ToString("dd.MM.yyyy HH:mm")</p>
+            <p><strong>Scor:</strong> @result.ScorePercentage%</p>
+            <p><strong>Corecte:</strong> @result.CorrectAnswers / @result.TotalQuestions</p>
+            <p><strong>Status:</strong> @result.Status</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:@result.ScorePercentage%"></div>
+            </div>
+        </div>
+    }
+}

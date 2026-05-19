@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - MedPrep Lab</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" asp-page="/Index">MedPrep Lab</a>
+
+        <nav class="nav-links">
+            <a asp-page="/Index">Acasă</a>
+            <a asp-page="/Lessons/Index">Lecții</a>
+            <a asp-page="/Quiz/Setup">Teste</a>
+            <a asp-page="/Progress/Index">Progres</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <p>MedPrep Lab © 2026 — platformă educațională pentru admiterea la Medicină</p>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

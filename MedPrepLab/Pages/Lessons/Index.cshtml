@@ -1,0 +1,26 @@
+﻿@page
+@model MedPrepLab.Pages.Lessons.IndexModel
+@{
+    ViewData["Title"] = "Lecții";
+}
+
+<h1>Lecții pentru admitere</h1>
+<p>Alege o lecție și repetă teoria pe capitole.</p>
+
+<div class="grid">
+    @foreach (var lesson in Model.Lessons)
+    {
+        <div class="card">
+            <span class="badge">@lesson.Chapter</span>
+
+            <h3>@lesson.Title</h3>
+
+            <p><strong>Materie:</strong> @lesson.Subject</p>
+            <p><strong>Dificultate:</strong> @lesson.Difficulty</p>
+
+            <a class="button" asp-page="/Lessons/Details" asp-route-id="@lesson.Id">
+                Deschide lecția
+            </a>
+        </div>
+    }
+</div>

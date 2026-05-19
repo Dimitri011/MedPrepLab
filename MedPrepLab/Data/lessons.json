@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Structura celulei",
+    "subject": "Biology",
+    "chapter": "Biologie celulara",
+    "content": "Celula este unitatea structurala si functionala a organismelor vii. Principalele componente ale celulei sunt membrana celulara, citoplasma si nucleul. In citoplasma se gasesc organite celulare, fiecare avand un rol specific. Mitocondriile produc energie, ribozomii participa la sinteza proteinelor, iar aparatul Golgi modifica si transporta substante.",
+    "imagePath": "/images/cell.png",
+    "difficulty": "Basic"
+  },
+  {
+    "id": 2,
+    "title": "ADN si informatia genetica",
+    "subject": "Biology",
+    "chapter": "Genetica",
+    "content": "ADN-ul este molecula care contine informatia genetica a organismelor. Este format din doua lanturi complementare, alcatuite din nucleotide. Fiecare nucleotida contine o baza azotata, un zahar si un rest fosfat. In ADN, adenina se imperecheaza cu timina, iar guanina cu citozina.",
+    "imagePath": "/images/dna.png",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "title": "Sistemul circulator",
+    "subject": "Biology",
+    "chapter": "Anatomie",
+    "content": "Sistemul circulator are rolul de a transporta sangele, oxigenul, nutrientii, hormonii si produsii de metabolism prin organism. Inima functioneaza ca o pompa, iar vasele de sange asigura circulatia. Arterele transporta sangele de la inima, venele aduc sangele inapoi la inima, iar capilarele permit schimbul de substante cu tesuturile.",
+    "imagePath": "/images/heart.png",
+    "difficulty": "Basic"
+  },
+  {
+    "id": 4,
+    "title": "Enzimele",
+    "subject": "Chemistry",
+    "chapter": "Biochimie",
+    "content": "Enzimele sunt proteine cu rol de catalizatori biologici. Ele accelereaza reactiile chimice din organism fara a se consuma in timpul reactiei. Activitatea enzimelor depinde de temperatura, pH si concentratia substratului. Fiecare enzima are un situs activ, unde se leaga substratul.",
+    "imagePath": "/images/enzyme.png",
+    "difficulty": "Medium"
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "text": "Care este organitul responsabil de producerea energiei in celula?",
+    "subject": "Biology",
+    "chapter": "Biologie celulara",
+    "difficulty": "Basic",
+    "type": "MultipleChoice",
+    "options": [
+      {
+        "id": 1,
+        "text": "Nucleul",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Mitocondria",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Ribozomul",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Aparatul Golgi",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Mitocondria produce energie prin procesul de respiratie celulara."
+  },
+  {
+    "id": 2,
+    "text": "Organitul implicat in sinteza proteinelor este ribozomul.",
+    "subject": "Biology",
+    "chapter": "Biologie celulara",
+    "difficulty": "Basic",
+    "type": "TrueFalse",
+    "options": [
+      {
+        "id": 1,
+        "text": "Adevarat",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "Fals",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Ribozomii sunt organitele care participa la sinteza proteinelor."
+  },
+  {
+    "id": 3,
+    "text": "Completeaza: Organitul responsabil de sinteza proteinelor este ______.",
+    "subject": "Biology",
+    "chapter": "Biologie celulara",
+    "difficulty": "Medium",
+    "type": "FillInBlank",
+    "options": [],
+    "correctTextAnswer": "ribozomul",
+    "explanation": "Ribozomul este organitul implicat in sinteza proteinelor."
+  },
+  {
+    "id": 4,
+    "text": "Ce baza azotata se imperecheaza cu adenina in ADN?",
+    "subject": "Biology",
+    "chapter": "Genetica",
+    "difficulty": "Medium",
+    "type": "MultipleChoice",
+    "options": [
+      {
+        "id": 1,
+        "text": "Guanina",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Citozina",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Timina",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "text": "Uracilul",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "In ADN, adenina se imperecheaza cu timina."
+  },
+  {
+    "id": 5,
+    "text": "ADN-ul este format din doua lanturi complementare.",
+    "subject": "Biology",
+    "chapter": "Genetica",
+    "difficulty": "Basic",
+    "type": "TrueFalse",
+    "options": [
+      {
+        "id": 1,
+        "text": "Adevarat",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "Fals",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "ADN-ul are structura dublu catenara, adica este format din doua lanturi complementare."
+  },
+  {
+    "id": 6,
+    "text": "Completeaza: In ADN, guanina se imperecheaza cu ______.",
+    "subject": "Biology",
+    "chapter": "Genetica",
+    "difficulty": "Medium",
+    "type": "FillInBlank",
+    "options": [],
+    "correctTextAnswer": "citozina",
+    "explanation": "Guanina se imperecheaza specific cu citozina."
+  },
+  {
+    "id": 7,
+    "text": "Care este rolul principal al inimii?",
+    "subject": "Biology",
+    "chapter": "Anatomie",
+    "difficulty": "Basic",
+    "type": "MultipleChoice",
+    "options": [
+      {
+        "id": 1,
+        "text": "Produce hormoni digestivi",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Pompeaza sangele in organism",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Filtreaza sangele",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Produce bila",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Inima functioneaza ca o pompa ce asigura circulatia sangelui."
+  },
+  {
+    "id": 8,
+    "text": "Arterele transporta sangele de la inima catre organe.",
+    "subject": "Biology",
+    "chapter": "Anatomie",
+    "difficulty": "Basic",
+    "type": "TrueFalse",
+    "options": [
+      {
+        "id": 1,
+        "text": "Adevarat",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "Fals",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Arterele transporta sangele de la inima, iar venele il aduc inapoi la inima."
+  },
+  {
+    "id": 9,
+    "text": "Completeaza: Vasele foarte subtiri unde are loc schimbul de substante se numesc ______.",
+    "subject": "Biology",
+    "chapter": "Anatomie",
+    "difficulty": "Medium",
+    "type": "FillInBlank",
+    "options": [],
+    "correctTextAnswer": "capilare",
+    "explanation": "Capilarele sunt vase foarte subtiri unde are loc schimbul de gaze si substante cu tesuturile."
+  },
+  {
+    "id": 10,
+    "text": "Ce sunt enzimele?",
+    "subject": "Chemistry",
+    "chapter": "Biochimie",
+    "difficulty": "Medium",
+    "type": "MultipleChoice",
+    "options": [
+      {
+        "id": 1,
+        "text": "Lipide cu rol energetic",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Proteine cu rol de catalizatori biologici",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Acizi nucleici",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Saruri minerale",
+        "isCorrect": false
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Enzimele sunt, in general, proteine care accelereaza reactiile chimice din organism."
+  },
+  {
+    "id": 11,
+    "text": "Enzimele se consuma complet in timpul reactiilor chimice.",
+    "subject": "Chemistry",
+    "chapter": "Biochimie",
+    "difficulty": "Medium",
+    "type": "TrueFalse",
+    "options": [
+      {
+        "id": 1,
+        "text": "Adevarat",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Fals",
+        "isCorrect": true
+      }
+    ],
+    "correctTextAnswer": "",
+    "explanation": "Enzimele accelereaza reactiile, dar nu se consuma in timpul reactiei."
+  },
+  {
+    "id": 12,
+    "text": "Completeaza: Zona enzimei unde se leaga substratul se numeste situs ______.",
+    "subject": "Chemistry",
+    "chapter": "Biochimie",
+    "difficulty": "Medium",
+    "type": "FillInBlank",
+    "options": [],
+    "correctTextAnswer": "activ",
+    "explanation": "Substratul se leaga de situsul activ al enzimei."
+  }
+]

@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Acasă";
+}
+
+<section class="hero">
+    <div>
+        <span class="badge">Admitere Medicină</span>
+
+        <h1>Pregătirea ta pentru Medicină, organizată inteligent.</h1>
+
+        <p>
+            MedPrep Lab te ajută să repeți teoria, să rezolvi teste pe capitole
+            și să îți urmărești progresul prin scoruri și feedback personalizat.
+        </p>
+
+        <a class="button" asp-page="/Quiz/Setup">Începe un test</a>
+        <a class="button button-secondary" asp-page="/Lessons/Index">Vezi lecțiile</a>
+    </div>
+
+    <div class="hero-card">
+        <h3>MedRadar</h3>
+        <p>
+            După fiecare test, aplicația îți arată capitolele la care stai bine
+            și zonele unde trebuie să mai repeți.
+        </p>
+
+        <p><strong>Exemplu:</strong> Genetică 80%, Anatomie 55%, Biochimie 70%.</p>
+    </div>
+</section>
+
+<section class="grid">
+    <div class="card">
+        <h3>Lecții structurate</h3>
+        <p>Teoria este împărțită pe capitole clare și ușor de urmărit.</p>
+    </div>
+
+    <div class="card">
+        <h3>Teste interactive</h3>
+        <p>Întrebări de tip multiple choice, adevărat/fals și completare.</p>
+    </div>
+
+    <div class="card">
+        <h3>Progres personal</h3>
+        <p>Vezi media scorurilor, capitolele bune și capitolele care trebuie repetate.</p>
+    </div>
+</section>

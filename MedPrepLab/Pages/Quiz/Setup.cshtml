@@ -1,0 +1,31 @@
+﻿@page
+@model MedPrepLab.Pages.Quiz.SetupModel
+@{
+    ViewData["Title"] = "Setare test";
+}
+
+<h1>Configureaza testul</h1>
+<p>Alege capitolul si numarul de intrebari.</p>
+
+<form method="post" class="form-box">
+    <label>Capitol</label>
+
+    <select asp-for="SelectedChapter">
+        <option value="Mixed">Test mixt</option>
+
+        @foreach (var chapter in Model.Chapters)
+        {
+            <option value="@chapter">@chapter</option>
+        }
+    </select>
+
+    <label>Numar de intrebari</label>
+
+    <select asp-for="QuestionCount">
+        <option value="3">3 intrebari</option>
+        <option value="5">5 intrebari</option>
+        <option value="10">10 intrebari</option>
+    </select>
+
+    <button class="button" type="submit">Porneste testul</button>
+</form>

@@ -1,0 +1,165 @@
+[
+  {
+    "TestsCompleted": 5,
+    "AverageScore": 45.33,
+    "BestChapter": "Mixed",
+    "WeakestChapter": "Biologie celulara",
+    "Results": [
+      {
+        "Date": "2026-05-19T06:11:53.7898887+03:00",
+        "TotalQuestions": 3,
+        "CorrectAnswers": 1,
+        "ScorePercentage": 33.33,
+        "Chapter": "Biologie celulara",
+        "Status": "NeedsPractice",
+        "Answers": [
+          {
+            "QuestionId": 1,
+            "GivenAnswer": "1",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 2,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 3,
+            "GivenAnswer": "apartul golgi",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-19T06:12:24.8395822+03:00",
+        "TotalQuestions": 5,
+        "CorrectAnswers": 4,
+        "ScorePercentage": 80,
+        "Chapter": "Mixed",
+        "Status": "Good",
+        "Answers": [
+          {
+            "QuestionId": 2,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 5,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 6,
+            "GivenAnswer": "adenina",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 8,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 11,
+            "GivenAnswer": "2",
+            "IsCorrect": true
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-19T06:16:12.0006025+03:00",
+        "TotalQuestions": 5,
+        "CorrectAnswers": 1,
+        "ScorePercentage": 20,
+        "Chapter": "Mixed",
+        "Status": "NeedsPractice",
+        "Answers": [
+          {
+            "QuestionId": 3,
+            "GivenAnswer": "mitocondria",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 5,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 6,
+            "GivenAnswer": "nush",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 10,
+            "GivenAnswer": "1",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 12,
+            "GivenAnswer": "idk",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-19T06:18:41.1471385+03:00",
+        "TotalQuestions": 5,
+        "CorrectAnswers": 3,
+        "ScorePercentage": 60,
+        "Chapter": "Mixed",
+        "Status": "Good",
+        "Answers": [
+          {
+            "QuestionId": 2,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 4,
+            "GivenAnswer": "3",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 7,
+            "GivenAnswer": "1",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 9,
+            "GivenAnswer": "artere",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 10,
+            "GivenAnswer": "2",
+            "IsCorrect": true
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-19T06:20:21.1807909+03:00",
+        "TotalQuestions": 3,
+        "CorrectAnswers": 1,
+        "ScorePercentage": 33.33,
+        "Chapter": "Biologie celulara",
+        "Status": "NeedsPractice",
+        "Answers": [
+          {
+            "QuestionId": 1,
+            "GivenAnswer": "4",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 2,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 3,
+            "GivenAnswer": "pula",
+            "IsCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]

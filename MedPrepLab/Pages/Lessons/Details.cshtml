@@ -1,0 +1,41 @@
+﻿@page "{id:int}"
+@model MedPrepLab.Pages.Lessons.DetailsModel
+@{
+    ViewData["Title"] = "Detalii lecție";
+}
+
+@if (Model.Lesson == null)
+{
+    <div class="card">
+        <h2>Lecția nu a fost găsită.</h2>
+        <a class="button" asp-page="/Lessons/Index">Înapoi la lecții</a>
+    </div>
+}
+else
+{
+    <div class="card">
+        <span class="badge">@Model.Lesson.Chapter</span>
+
+        <h1>@Model.Lesson.Title</h1>
+
+        <p><strong>Materie:</strong> @Model.Lesson.Subject</p>
+        <p><strong>Dificultate:</strong> @Model.Lesson.Difficulty</p>
+
+        <hr />
+
+        <div class="lesson-content">
+            <p>@Model.Lesson.Content</p>
+        </div>
+
+        <a class="button"
+           asp-page="/Quiz/Start"
+           asp-route-chapter="@Model.Lesson.Chapter"
+           asp-route-count="3">
+            Test rapid din acest capitol
+        </a>
+
+        <a class="button button-secondary" asp-page="/Lessons/Index">
+            Înapoi
+        </a>
+    </div>
+}

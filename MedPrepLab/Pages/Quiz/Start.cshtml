@@ -1,0 +1,102 @@
+﻿@page
+@model MedPrepLab.Pages.Quiz.StartModel
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>Test: @Model.Chapter</h1>
+<p>Raspunde la intrebari, apoi apasa pe finalizeaza.</p>
+
+@if (!Model.Questions.Any())
+{
+    <div class="card">
+        <h2>Nu exista intrebari pentru acest capitol.</h2>
+        <a class="button" asp-page="/Quiz/Setup">Inapoi</a>
+    </div>
+}
+else
+{
+    <form method="post" id="quizForm">
+        <input type="hidden" asp-for="Chapter" />
+
+        <div id="formWarning" class="card" style="display:none; margin-bottom:20px; border-color:#ef4444;">
+            <p class="result-bad">
+                Te rog sa raspunzi la toate intrebarile inainte de a finaliza testul.
+            </p>
+        </div>
+
+        @foreach (var question in Model.Questions)
+        {
+            <div class="question-box" data-question-id="@question.Id">
+                <h3>@question.Text</h3>
+
+                @if (question.Type == MedPrepLab.Enums.QuestionType.FillInBlank)
+                {
+                    <input class="input"
+                           type="text"
+                           name="Answers[@question.Id]"
+                           placeholder="Scrie raspunsul aici..." />
+                }
+                else
+                {
+                    @foreach (var option in question.Options)
+                    {
+                        <label class="option">
+                            <input type="radio"
+                                   name="Answers[@question.Id]"
+                                   value="@option.Id" />
+                            @option.Text
+                        </label>
+                    }
+                }
+            </div>
+        }
+
+        <button class="button" type="submit">Finalizeaza testul</button>
+    </form>
+}
+
+@section Scripts {
+    <script>
+        const form = document.getElementById("quizForm");
+
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                const questionBoxes = document.querySelectorAll(".question-box");
+                let allAnswered = true;
+
+                questionBoxes.forEach(function (box) {
+                    const inputs = box.querySelectorAll("input");
+                    const firstInput = inputs[0];
+
+                    let answered = false;
+
+                    if (firstInput && firstInput.type === "text") {
+                        answered = firstInput.value.trim().length > 0;
+                    } else {
+                        inputs.forEach(function (input) {
+                            if (input.checked) {
+                                answered = true;
+                            }
+                        });
+                    }
+
+                    if (!answered) {
+                        allAnswered = false;
+                        box.style.borderColor = "#ef4444";
+                    } else {
+                        box.style.borderColor = "#e2e8f0";
+                    }
+                });
+
+                if (!allAnswered) {
+                    event.preventDefault();
+
+                    const warning = document.getElementById("formWarning");
+                    warning.style.display = "block";
+                    warning.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+            });
+        }
+    </script>
+}

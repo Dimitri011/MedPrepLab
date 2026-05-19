@@ -1,0 +1,78 @@
+﻿@page
+@model MedPrepLab.Pages.Quiz.ResultModel
+@{
+    ViewData["Title"] = "Rezultat";
+}
+
+@if (Model.Result == null)
+{
+    <div class="card">
+        <h2>Nu exista niciun rezultat disponibil.</h2>
+        <a class="button" asp-page="/Quiz/Setup">Porneste un test</a>
+    </div>
+}
+else
+{
+    <div class="card">
+        <h1>Rezultatul tau</h1>
+
+        <p><strong>Capitol:</strong> @Model.Result.Chapter</p>
+        <p><strong>Raspunsuri corecte:</strong> @Model.Result.CorrectAnswers / @Model.Result.TotalQuestions</p>
+        <p><strong>Scor:</strong> @Model.Result.ScorePercentage%</p>
+        <p><strong>Status:</strong> @Model.Result.Status</p>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width:@Model.Result.ScorePercentage%"></div>
+        </div>
+
+        <br />
+
+        @if (Model.Result.ScorePercentage >= 85)
+        {
+            <p class="result-good">Excelent! Esti foarte bine pregatita la acest capitol.</p>
+        }
+        else if (Model.Result.ScorePercentage >= 60)
+        {
+            <p class="result-good">Bine! Mai repeta putin pentru un scor mai sigur.</p>
+        }
+        else
+        {
+            <p class="result-bad">Ai nevoie de mai multa practica la acest capitol.</p>
+        }
+
+        <a class="button" asp-page="/Quiz/Setup">Fa alt test</a>
+        <a class="button button-secondary" asp-page="/Progress/Index">Vezi progresul</a>
+    </div>
+
+    <h2>Feedback detaliat</h2>
+
+    @foreach (var question in Model.Questions)
+    {
+        bool isCorrect = Model.WasCorrect(question);
+
+        <div class="card" style="margin-bottom: 16px; border-color:@(isCorrect ? "#10b981" : "#ef4444")">
+            <span class="badge">@question.Chapter</span>
+
+            <h3>@question.Text</h3>
+
+            <p>
+                <strong>Raspunsul tau:</strong>
+                @Model.GetUserAnswerText(question)
+            </p>
+
+            @if (isCorrect)
+            {
+                <p class="result-good">Corect</p>
+            }
+            else
+            {
+                <p class="result-bad">Gresit</p>
+            }
+
+            <p>
+                <strong>Explicatie:</strong>
+                @question.Explanation
+            </p>
+        </div>
+    }
+}
