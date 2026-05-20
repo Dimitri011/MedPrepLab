@@ -1,7 +1,7 @@
 [
   {
-    "TestsCompleted": 5,
-    "AverageScore": 45.33,
+    "TestsCompleted": 7,
+    "AverageScore": 45.71,
     "BestChapter": "Mixed",
     "WeakestChapter": "Biologie celulara",
     "Results": [
@@ -157,6 +157,66 @@
             "QuestionId": 3,
             "GivenAnswer": "pula",
             "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-20T21:35:24.9366547+03:00",
+        "TotalQuestions": 3,
+        "CorrectAnswers": 1,
+        "ScorePercentage": 33.33,
+        "Chapter": "Biologie celulara",
+        "Status": "NeedsPractice",
+        "Answers": [
+          {
+            "QuestionId": 1,
+            "GivenAnswer": "4",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 2,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 3,
+            "GivenAnswer": "apartul golgi",
+            "IsCorrect": false
+          }
+        ]
+      },
+      {
+        "Date": "2026-05-20T22:05:31.0468348+03:00",
+        "TotalQuestions": 5,
+        "CorrectAnswers": 3,
+        "ScorePercentage": 60,
+        "Chapter": "Mixed",
+        "Status": "Good",
+        "Answers": [
+          {
+            "QuestionId": 1,
+            "GivenAnswer": "2",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 3,
+            "GivenAnswer": "ribozom",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 5,
+            "GivenAnswer": "1",
+            "IsCorrect": true
+          },
+          {
+            "QuestionId": 9,
+            "GivenAnswer": "artere",
+            "IsCorrect": false
+          },
+          {
+            "QuestionId": 10,
+            "GivenAnswer": "2",
+            "IsCorrect": true
           }
         ]
       }
